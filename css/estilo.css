@@ -69,6 +69,8 @@
   border-left: 8px solid LightCoral;
 }
 
+
+
 /*...............main.index............*/
 .main {
   background-color: LightCoral;
@@ -315,13 +317,13 @@
 
 .sectioneEmprendedores>div div a img {
   padding: 8px;
-  transition: all 2s;
+ transition: all 1s;
 }
-
 .sectioneEmprendedores>div div a img:hover {
   width: 180px;
   border: solid LightCoral;
 }
+
 
 /*...............main.contactos.................*/
 .sectioneContactos {
@@ -370,12 +372,13 @@
 }
 
 .sectioneContactos>div a img {
-  transition: all 1s;
+  transition: 1s;
 }
 
 .sectioneContactos>div a img:hover {
   width: 200px;
 }
+
 
 
 /*..............main.galeria...............*/
@@ -392,14 +395,15 @@
 
 .sectioneGaleria div img {
   margin: 8px;
-  transition: all 1s;
+  transition: all 2s;
 }
-
 .sectioneGaleria div img:hover {
   width: 350px;
   background-color: LightCoral;
   padding: 8px;
 }
+
+
 
 /*.................footer.................*/
 
