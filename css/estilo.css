@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2? family=Lato:ital@0;1&family=Roboto:wght@100&display=swap');
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.2fr auto, 0.5fr;
+  gap: 4px 0px;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+/*.................header..................*/
+
+.header {
+  height: 250px;
+  background-image: url("../imagenes/imagen-general.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: header;
+}
+
+.header img {
+  height: 150px;
+}
+
+/*.................nav.................*/
+
+.nav {
+  height: 60px;
+  background-color: aqua;
+  grid-area: nav;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-top: 20px;
+}
+
+.nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: LightCoral;
+  padding: 7px;
+  transition: all 1s;
+}
+
+.nav ul li a:hover {
+  border-left: 8px solid LightCoral;
+}
+
+/*...............main.index............*/
+.main {
+  background-color: LightCoral;
+  grid-area: main;
+}
+
+.hero {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.hero h1 {
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sectionInicio {
+  height: 105vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.473)), url(../imagenes/lugar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sectionInicio>div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sectionInicio>div div p {
+  font-size: 40px;
+  font-weight: bold;
+  color: azure;
+  background-color: rgba(250, 235, 215, 0.425);
+  margin: 17% 12% 12% 12%;
+}
+
+.sectionInicio>div img {
+  margin: 17% 12% 12% 12%;
+  width: 30%;
+}
+
+
+/*....................main.nosotros.....................*/
+
+.sectionHistoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 250, 250);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.sectionHistoria h2 {
+  font-size: 40px;
+  padding: 7px;
+  color: LightCoral;
+}
+
+.sectionHistoria p {
+  font-size: 20px;
+  text-align: center;
+  color: LightCoral;
+  padding: 8px;
+}
+
+.sectionLugar {
+  background-color: LightSkyBlue;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: 100vh;
+}
+
+.sectionLugar>div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  height: 450px;
+}
+
+.sectionLugar>div img {
+  width: 400px;
+  height: 450px;
+  margin-top: 30px;
+}
+
+.sectionLugar>div div p {
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.sectionPerli {
+  background-color: LightSkyBlue;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100vh;
+}
+
+.sectionPerli>div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 10px;
+  height: 450px;
+}
+
+.sectionPerli>div img {
+  width: 440px;
+  height: 470px;
+}
+
+.sectionPerli div .parrafo {
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+/*................main.servicios...............*/
+
+.sectioneFeriantes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
+  height: 120vh;
+  margin: 20px;
+}
+
+.sectioneFeriantes h3 {
+  font-size: 50px;
+  padding: 10px;
+  color: LightCoral;
+  text-align: center;
+}
+
+.sectioneFeriantes p {
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.sectioneVisitantes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
+  height: 60vh;
+  margin: 20px;
+}
+
+.sectioneVisitantes h3 {
+  font-size: 50px;
+  padding: 10px;
+  color: LightCoral;
+  text-align: center;
+}
+
+.sectioneVisitantes p {
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/*...............main.emprendedores...............*/
+
+.sectioneComentarios {
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+  margin: 0 20px 0 20px;
+}
+
+.sectioneComentarios>div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.sectioneComentarios>div div p {
+  background-color: white;
+  font-size: 20px;
+  padding: 8px;
+  color: rgb(250, 246, 27);
+}
+
+.sectioneComentarios>div p {
+  font-size: 30px;
+  color: aliceblue;
+  background-color: LightCoral;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.sectioneComentarios>div p {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectioneEmprendedores>div p {
+  font-size: 30px;
+  color: aliceblue;
+  background-color: LightCoral;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.sectioneEmprendedores>div div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.sectioneEmprendedores>div div a img {
+  padding: 8px;
+  transition: all 2s;
+}
+
+.sectioneEmprendedores>div div a img:hover {
+  width: 180px;
+  border: solid LightCoral;
+}
+
+/*...............main.contactos.................*/
+.sectioneContactos {
+  height: 70vh;
+  background-color: rgba(13, 159, 196, 0.747);
+  padding: 15px;
+}
+
+.sectioneContactos>div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.425);
+  background-position: 50% 50%;
+}
+
+.sectioneContactos>div div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 4px;
+}
+
+.sectioneContactos>div div form textarea {
+  color: black;
+  padding: 4px;
+}
+
+.sectioneContactos>div div form input {
+  color: LightCoral;
+  margin: 4px;
+  width: 120px;
+  height: 25px;
+  background-color: aliceblue;
+  font-size: 15px;
+}
+
+.sectioneContactos>div div form input {
+  transition: all 1s;
+}
+
+.sectioneContactos>div div form input:hover {
+  background-color: LightCoral;
+  color: aliceblue;
+}
+
+.sectioneContactos>div a img {
+  transition: all 1s;
+}
+
+.sectioneContactos>div a img:hover {
+  width: 200px;
+}
+
+
+/*..............main.galeria...............*/
+
+.sectioneGaleria div {
+  background-color: rgba(255, 228, 196, 0.493);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+
+.sectioneGaleria div img {
+  margin: 8px;
+  transition: all 1s;
+}
+
+.sectioneGaleria div img:hover {
+  width: 350px;
+  background-color: LightCoral;
+  padding: 8px;
+}
+
+/*.................footer.................*/
+
+.footer {
+  background-color: black;
+  padding: 10px;
+  grid-area: footer;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer div a {
+  text-decoration: none;
+  color: aliceblue;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.footer div a img {
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+}
+
+.footer div a img:hover {
+  width: 50px;
+  height: 50px;
+}
+
+/*.............media.queries.nav.....*/
+@media screen and (max-width: 620px) {
+  .nav {
+    height: 45vh;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+}
+
+/*...............media.queries.index............*/
+@media screen and (max-width: 569px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sectionInicio>div {
+    flex-direction: column;
+  }
+
+
+  .sectionInicio>div div p {
+    align-items: center;
+    margin: 0 5% 20% 5%;
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .sectionInicio>div div p {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sectionInicio>div img {
+    width: 200px;
+  }
+}
+
+/*...............media.queries.nosotros............*/
+
+@media screen and (max-width: 800px) {
+  .sectionLugar>div {
+    flex-direction: column;
+  }
+
+  .sectionLugar {
+    height: 150vh;
+  }
+
+  .sectionPerli>div {
+    flex-direction: column;
+  }
+
+  .sectionPerli {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sectionLugar>div img {
+    width: 300px;
+    height: 350px;
+  }
+
+  .sectionPerli>div img {
+    width: 300px;
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .sectionLugar>div img {
+    width: 270px;
+    height: 320px;
+  }
+
+  .sectionPerli>div img {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+/*...............media.queries.servicios............*/
+@media screen and (max-width: 1115px) {
+  .sectioneFeriantes {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .sectioneFeriantes p {
+    font-size: 25px;
+  }
+
+  .sectioneVisitantes p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sectioneFeriantes {
+    height: 160vh;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .sectioneFeriantes p {
+    font-size: 20px;
+  }
+
+  .sectioneFeriantes h3 {
+    font-size: 35px;
+  }
+
+  .sectioneVisitantes p {
+    font-size: 20px;
+  }
+
+  .sectioneVisitantes h3 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .sectioneFeriantes {
+    height: 180vh;
+  }
+
+  .sectioneVisitantes {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .sectioneFeriantes {
+    height: 220vh;
+  }
+
+
+  /*...............media.queries.emprendedores............*/
+
+  @media screen and (max-width: 870px) {
+    .hero h2 {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width:599px) {
+    .hero h2 {
+      font-size: 35px;
+    }
+
+    .sectioneComentarios {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width:489px) {
+    .hero h2 {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 321px) {
+    .sectioneComentarios>div p {
+      font-size: 25px;
+    }
+
+    .sectioneEmprendedores>div p {
+      font-size: 25px;
+    }
+  }
+
+  /*...............media.queries.contactos............*/
+
+  @media screen and (max-width: 600px) {
+    .sectioneContactos>div {
+      flex-direction: column;
+      height: 150vh;
+    }
+
+    .sectioneContactos {
+      height: 200vh;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .hero p {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .hero p {
+      font-size: 20px;
+    }
+  }
