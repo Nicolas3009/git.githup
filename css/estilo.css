@@ -17,7 +17,6 @@
     "main main main"
     "footer footer footer";
 }
-
 /*.................header..................*/
 
 .header {
@@ -36,26 +35,18 @@
   height: 150px;
 }
 
+
 /*.................nav.................*/
 
-.nav {
+.nav{
   height: 60px;
   background-color: aqua;
   grid-area: nav;
 }
-
-.nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
+.nav>div button{
+  background-color: white;
 }
-
-.nav ul li {
-  margin-top: 20px;
-}
-
-.nav ul li a {
+.nav>div div div a{
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -65,18 +56,11 @@
   transition: all 1s;
 }
 
-.nav ul li a:hover {
+.nav>div div div a:hover {
   border-left: 8px solid LightCoral;
 }
 
-
-
-/*...............main.index............*/
-.main {
-  background-color: LightCoral;
-  grid-area: main;
-}
-
+/*.............hero............*/
 .hero {
   color: aliceblue;
   display: flex;
@@ -85,53 +69,45 @@
   align-items: center;
   height: 25vh;
 }
-
-.hero h1 {
-  font-size: 50px;
-  padding: 10px;
+.hero h1{
+  font-size: 40px;
   text-align: center;
 }
-
-.hero h2 {
-  font-size: 50px;
-  padding: 10px;
-  text-align: center;
-}
-
-.hero p {
+.hero h2{
   font-size: 30px;
   text-align: center;
+  margin: 0 10px 0 10px;
 }
-
-.sectionInicio {
-  height: 105vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.473)), url(../imagenes/lugar.jpg);
+.hero p {
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 10px 0 10px;
+}
+/*...............main.index............*/
+.main {
+  background-color: LightCoral;
+  grid-area: main;
+}
+.sectionInicio>div {
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-image: url(../imagenes/hojas\ tropicales.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-.sectionInicio>div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.sectionInicio>div div p {
+.sectionInicio>div div p{
   font-size: 40px;
-  font-weight: bold;
-  color: azure;
-  background-color: rgba(250, 235, 215, 0.425);
-  margin: 17% 12% 12% 12%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color:rgba(118, 124, 129, 0.616);
+  width: 400px;
 }
-
-.sectionInicio>div img {
-  margin: 17% 12% 12% 12%;
-  width: 30%;
-}
-
-
 /*....................main.nosotros.....................*/
 
 .sectionHistoria {
@@ -151,7 +127,7 @@
 }
 
 .sectionHistoria p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: LightCoral;
   padding: 8px;
@@ -163,7 +139,6 @@
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 0px;
-  height: 100vh;
 }
 
 .sectionLugar>div {
@@ -191,7 +166,6 @@
   background-color: LightSkyBlue;
   margin-left: 20px;
   margin-right: 20px;
-  height: 100vh;
 }
 
 .sectionPerli>div {
@@ -203,11 +177,11 @@
 }
 
 .sectionPerli>div img {
-  width: 440px;
-  height: 470px;
+  width: 400px;
+  height: 450px;
 }
 
-.sectionPerli div .parrafo {
+.sectionPerli>div div p {
   margin: 30px;
   font-size: 30px;
   text-align: center;
@@ -220,8 +194,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
-  height: 120vh;
+  height: 200vh;
   margin: 20px;
 }
 
@@ -243,8 +218,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
-  height: 60vh;
+  height: 100vh;
   margin: 20px;
 }
 
@@ -317,17 +293,19 @@
 
 .sectioneEmprendedores>div div a img {
   padding: 8px;
- transition: all 1s;
+  transition: all 1s;
 }
+
 .sectioneEmprendedores>div div a img:hover {
   width: 180px;
   border: solid LightCoral;
+  transform scale: 1.1;
 }
 
 
 /*...............main.contactos.................*/
 .sectioneContactos {
-  height: 70vh;
+  height: 100vh;
   background-color: rgba(13, 159, 196, 0.747);
   padding: 15px;
 }
@@ -397,8 +375,9 @@
   margin: 8px;
   transition: all 2s;
 }
+
 .sectioneGaleria div img:hover {
-  width: 350px;
+  width: 300px;
   background-color: LightCoral;
   padding: 8px;
 }
@@ -435,42 +414,38 @@
 .footer div a img:hover {
   width: 50px;
   height: 50px;
-}
-
-/*.............media.queries.nav.....*/
-@media screen and (max-width: 620px) {
-  .nav {
-    height: 45vh;
-  }
-
-  .nav ul {
-    flex-direction: column;
-  }
+  transform scale: 1.1;
 }
 
 /*...............media.queries.index............*/
-@media screen and (max-width: 569px) {
-  .hero h1 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .hero h1 {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 992px) {
   .sectionInicio>div {
     flex-direction: column;
   }
-
-
+  .sectionInicio>div img{
+    width: 250px;
+  }
   .sectionInicio>div div p {
     align-items: center;
-    margin: 0 5% 20% 5%;
+    margin: 0 0 15% 0;
     font-size: 37px;
+  
+}
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sectionInicio>div img {
+    width: 220px;
   }
 }
 
@@ -479,16 +454,23 @@
     font-size: 35px;
   }
 }
-
-@media screen and (max-width: 550px) {
-  .sectionInicio>div img {
-    width: 200px;
+@media screen and (max-width: 459px){
+  .sectionInicio>div div p {
+    font-size: 30px;
+  }
+  .sectionInicio>div div p{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 350px){
+  .sectionInicio>div div p{
+    width: 280px;
   }
 }
 
 /*...............media.queries.nosotros............*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 990px) {
   .sectionLugar>div {
     flex-direction: column;
   }
@@ -505,35 +487,72 @@
     height: 150vh;
   }
 }
-
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 769px){
+  .sectionLugar {
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 530px){
+  .sectionLugar>div img {
+    width: 350px;
+    height: 400px;
+}
+.sectionPerli>div img {
+  width: 350px;
+  height: 400px;
+}
+}
+@media screen and (max-width: 474px){
   .sectionLugar>div img {
     width: 300px;
     height: 350px;
-  }
-
-  .sectionPerli>div img {
-    width: 300px;
-    height: 330px;
-  }
+}
+.sectionPerli>div img {
+  width: 300px;
+  height: 350px;
+}
+.sectionHistoria h2{
+  font-size: 35px;
+}
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 385px){
   .sectionLugar>div img {
-    width: 270px;
-    height: 320px;
-  }
-
-  .sectionPerli>div img {
-    width: 270px;
+    width: 250px;
     height: 300px;
-  }
 }
+.sectionPerli>div img {
+  width: 250px;
+  height:300px;
+}
+}
+@media screen and (max-width: 374px){
+.sectionLugar>div div p {
+  font-size: 25px;
+}
+.sectionPerli>div div p{
+font-size: 25px;
+}
+}
+@media screen and (max-width:330px){
+  .sectionLugar>div img {
+    width: 200px;
+    height: 250px;
+}
+.sectionPerli>div img {
+  width: 200px;
+  height: 250px;
+}
+.sectionHistoria h2{
+  font-size: 30px;
+}
+}
+
 
 /*...............media.queries.servicios............*/
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1120px) {
   .sectioneFeriantes {
-    height: 140vh;
+    height: 230vh;
   }
 }
 
@@ -547,15 +566,15 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 769px) {
   .sectioneFeriantes {
-    height: 160vh;
+    height: 260vh;
   }
 }
 
 @media screen and (max-width: 598px) {
   .sectioneFeriantes p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .sectioneFeriantes h3 {
@@ -563,7 +582,7 @@
   }
 
   .sectioneVisitantes p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .sectioneVisitantes h3 {
@@ -573,43 +592,32 @@
 
 @media screen and (max-width: 415px) {
   .sectioneFeriantes {
-    height: 180vh;
+    height: 300vh;
   }
 
   .sectioneVisitantes {
-    height: 80vh;
+    height: 120vh;
   }
 }
 
 @media screen and (max-width: 360px) {
   .sectioneFeriantes {
-    height: 220vh;
+    height: 350vh;
   }
+  .sectioneVisitantes {
+    height: 140vh;
+  }
+}
 
 
   /*...............media.queries.emprendedores............*/
 
-  @media screen and (max-width: 870px) {
-    .hero h2 {
-      font-size: 40px;
-    }
-  }
-
-  @media screen and (max-width:599px) {
-    .hero h2 {
-      font-size: 35px;
-    }
-
+@media screen and (max-width: 770px) {
     .sectioneComentarios {
       flex-direction: column;
     }
   }
 
-  @media screen and (max-width:489px) {
-    .hero h2 {
-      font-size: 25px;
-    }
-  }
 
   @media screen and (max-width: 321px) {
     .sectioneComentarios>div p {
@@ -623,25 +631,21 @@
 
   /*...............media.queries.contactos............*/
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 765px) {
     .sectioneContactos>div {
       flex-direction: column;
       height: 150vh;
+      margin-top: 15vh;
     }
 
     .sectioneContactos {
       height: 200vh;
     }
   }
-
-  @media screen and (max-width:500px) {
-    .hero p {
-      font-size: 25px;
+  @media screen and (max-width: 428px){
+    .hero p{
+      font-size: 18px;
+      margin-top: 8px;
     }
   }
 
-  @media screen and (max-width:400px) {
-    .hero p {
-      font-size: 20px;
-    }
-  }
