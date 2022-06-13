@@ -156,10 +156,12 @@
 }
 
 .sectionLugar>div div p {
+  background-color:LightCoral;
   margin: 30px;
   font-size: 30px;
   text-align: center;
   color: aliceblue;
+  border: solid rgb(255, 250, 250);
 }
 
 .sectionPerli {
@@ -182,10 +184,12 @@
 }
 
 .sectionPerli>div div p {
+  background-color:rgb(255, 250, 250) ;
   margin: 30px;
   font-size: 30px;
   text-align: center;
-  color: aliceblue;
+  color: LightCoral;
+  border: solid LightCoral;
 }
 
 /*................main.servicios...............*/
@@ -274,34 +278,11 @@
   flex-direction: column;
 }
 
-.sectioneEmprendedores>div p {
-  font-size: 30px;
-  color: aliceblue;
-  background-color: LightCoral;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+.sectioneEmprendedores {
+  background-color: rgba(255, 255, 255, 0.486);
+  margin: 0 10px 0 10px;
 }
-
-.sectioneEmprendedores>div div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-.sectioneEmprendedores>div div a img {
-  padding: 8px;
-  transition: all 1s;
-}
-
-.sectioneEmprendedores>div div a img:hover {
-  width: 180px;
-  border: solid LightCoral;
-  transform scale: 1.1;
-}
-
+  
 
 /*...............main.contactos.................*/
 .sectioneContactos {
@@ -373,7 +354,7 @@
 
 .sectioneGaleria div img {
   margin: 8px;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .sectioneGaleria div img:hover {
