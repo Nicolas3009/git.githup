@@ -257,17 +257,21 @@
 .sectioneComentarios {
   display: flex;
   justify-content: space-around;
-  background-color: aqua;
-  margin: 0 20px 0 20px;
+  background-color: rgba(255, 255, 255, 0.486);
+  margin: 0 10px 0 10px;
 }
 
 .sectioneComentarios>div {
-  display: flex;
-  flex-direction: column;
   margin: 20px;
+  width: 100%;
+}
+.sectioneComentarios>div div{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .sectioneComentarios>div div p {
+  width: 100%;
   background-color: white;
   font-size: 20px;
   padding: 8px;
@@ -281,11 +285,6 @@
   padding: 10px;
   margin: 10px;
   text-align: center;
-}
-
-.sectioneComentarios>div p {
-  display: flex;
-  flex-direction: column;
 }
 
 .sectioneEmprendedores {
