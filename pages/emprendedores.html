@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Per´ la Terra</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -16,24 +16,34 @@
             <img class="imagen" src="../imagenes/logo-removebg-preview.png" width="150">
         </header>
         <nav class="nav navbar navbar-expand-lg navbar-light">
-            <div class=" m-2 container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-                    <div>
-                        <a class=" m-3 text-center" href="../index.html">Inicio</a>
-                        <a class=" m-3 text-center" href="./nosotros.html">Nosotros</a>
-                        <a class=" m-3 text-center" href="./nuestros-servicios.html">Nuestros servicios</a>
-                        <a class=" m-3 text-center" href="./emprendedores.html">Emprendimientos</a>
-                        <a class=" m-3 text-center" href="./contactos.html"">Contactos</a>
-                            <a class=" m-3 text-center" href="./galeria.html">Galería</a>
-                    </div>
-                </div>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="m-4 active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="m-4 active" href="../pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="m-4 active" href="../pages/nuestros-servicios.html">Nuestros servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="m-4 active" href="../pages/emprendedores.html">Emprendimientos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="m-4 active" href="../pages/contactos.html">Contactos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="m-4 active" href="../pages/galeria.html">Galeria</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         <main class="main">
             <section class="hero">
                 <h2> Algunos emprendimientos que formaron parte de las ferias</h2>
@@ -405,7 +415,7 @@
             </div>
         </footer>
     </div>
-    <link rel="stylesheet" href="js/bootstrap.js">
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -40,8 +40,7 @@
 /*.................nav.................*/
 
 .nav {
-  height: 60px;
-  background-color: aqua;
+  background-color: rgb(0, 255, 255);
   grid-area: nav;
 }
 
@@ -49,18 +48,19 @@
   background-color: white;
 }
 
-.nav>div div div a {
+.nav>div div ul li a {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  background-color: aliceblue;
   color: LightCoral;
-  padding: 7px;
+  padding: 4px;
   transition: all 1s;
+  margin: 15px 0 15px 0;
 }
 
-.nav>div div div a:hover {
+.nav>div div ul li a:hover {
   border-left: 8px solid LightCoral;
+  background-color: aliceblue;
 }
 
 /*.............hero............*/
@@ -524,6 +524,11 @@
   }
 
   @media screen and (max-width: 385px) {
+    .sectionHistoria {
+      margin-left: 0;
+      margin-right: 0;
+      
+    }
     .sectionLugar>div img {
       width: 250px;
       height: 300px;
