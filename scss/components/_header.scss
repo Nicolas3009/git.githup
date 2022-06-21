@@ -1,0 +1,17 @@
+
+
+.header {
+    height: 250px;
+    background-image: url("../imagenes/imagen-general.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: header;
+    img {
+        height: 150px;
+      }
+  }
+  

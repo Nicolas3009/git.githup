@@ -1,0 +1,371 @@
+//...............media.queries.index............//
+@media screen and (max-width: 992px) {
+    .sectionInicio{
+        div {
+      flex-direction: column;
+      img {
+        width: 250px;
+      }
+      div{
+        p {
+            align-items: center;
+            margin: 0 0 15% 0;
+            font-size: 37px;
+        
+          }
+      }
+    }
+}
+}
+  
+    @media screen and (max-width: 768px) {
+      .hero{
+        h1 {
+            font-size: 30px;
+          }
+      }
+    }
+  
+    @media screen and (max-width: 390px) {
+      .hero {
+        h1 {
+        font-size: 25px;
+      }
+    }
+    }
+  
+    @media screen and (max-width: 550px) {
+      .sectionInicio{
+        div{
+            img {
+        width: 220px;
+      }
+    }
+}
+    }
+  
+    @media screen and (max-width: 530px) {
+      .sectionInicio{
+        div{
+          div{
+            p {
+                font-size: 35px;
+              }
+          }  
+        } 
+    }
+}
+  
+    @media screen and (max-width: 459px) {
+      .sectionInicio{
+        div{
+            div{
+                p {
+                    font-size: 30px;
+                  } 
+            }
+        } 
+    }
+
+  
+      .sectionInicio{
+        div{
+            div{
+                p {
+                    width: 300px;
+                  }
+            }
+        } 
+    }
+}
+  
+    @media screen and (max-width: 350px) {
+      .sectionInicio{
+        div{
+            div{
+                p {
+                    width: 280px;
+                  }
+            }
+        } 
+    }
+}
+
+//...............media.queries.nosotros............//
+
+@media screen and (max-width: 990px) {
+    .sectionLugar{
+        height: 150vh;
+        div {
+      flex-direction: column;
+    }
+}
+
+    .sectionPerli{
+        height: 150vh;
+        div {
+      flex-direction: column;
+    }
+}
+
+   
+  }
+
+  @media screen and (max-width: 769px) {
+    .sectionLugar {
+      height: 200vh;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    .sectionLugar{
+        div{
+            img {
+                width: 350px;
+                height: 400px;
+              }
+          
+        } 
+    }
+
+    .sectionPerli{
+        div{
+            img {
+                width: 350px;
+                height: 400px;
+              }
+        } 
+  }
+}
+
+  @media screen and (max-width: 474px) {
+    .sectionLugar{
+        div{
+            img {
+                width: 300px;
+                height: 350px;
+              }
+        }
+    } 
+
+    .sectionPerli{
+        div{
+            img {
+                width: 300px;
+                height: 350px;
+              }
+        }
+    } 
+
+    .sectionHistoria{
+        h2 {
+      font-size: 35px;
+    }
+  }
+}
+
+  @media screen and (max-width: 385px) {
+    .sectionHistoria {
+      margin-left: 0;
+      margin-right: 0;
+      
+    }
+    .sectionLugar{
+        div{
+            img {
+                width: 250px;
+                height: 300px;
+              }
+        }
+    }
+
+    .sectionPerli{
+        div{
+            img {
+                width: 250px;
+                height: 300px;
+              }
+        } 
+  }
+    }
+
+    
+  @media screen and (max-width: 374px) {
+    .sectionLugar{
+        div{
+            div{
+                p {
+                    font-size: 25px;
+                  }
+            }
+        }
+    }
+
+    .sectionPerli{
+        div{
+            div{
+                p {
+                    font-size: 25px;
+                  }
+            }
+        } 
+  }
+}
+
+
+  @media screen and (max-width:330px) {
+    .sectionLugar{
+        div{
+            img {
+                width: 200px;
+                height: 250px;
+              }
+            }
+        } 
+
+    .sectionPerli{
+        div {
+            img {
+      width: 200px;
+      height: 250px;
+    }
+}
+    }
+
+    .sectionHistoria{
+        h2 {
+            font-size: 30px;
+          }
+    } 
+  }
+
+   //...............media.queries.servicios............//
+   @media screen and (max-width: 1120px) {
+    .sectioneFeriantes {
+      height: 250vh;
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    .sectioneFeriantes{
+        p {
+            font-size: 25px;
+          }
+    } 
+
+    .sectioneVisitantes{
+        p {
+            font-size: 25px;
+          }
+    } 
+  }
+
+  @media screen and (max-width: 769px) {
+    .sectioneFeriantes {
+      height: 280vh;
+    }
+  }
+
+  @media screen and (max-width: 598px) {
+    .sectioneFeriantes{
+        p {
+            font-size: 22px;
+          }
+    }
+
+    .sectioneFeriantes{
+        h3 {
+            font-size: 35px;
+          }
+    } 
+
+    .sectioneVisitantes{
+        p {
+            font-size: 22px;
+          }
+    }
+
+    .sectioneVisitantes{
+        h3 {
+            font-size: 35px;
+          }
+    } 
+  }
+
+  @media screen and (max-width: 415px) {
+    .sectioneFeriantes {
+      height: 320vh;
+    }
+
+    .sectioneVisitantes {
+      height: 130vh;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .sectioneFeriantes {
+      height: 370vh;
+    }
+
+    .sectioneVisitantes {
+      height: 150vh;
+    }
+  }
+  @media screen and (max-width: 337px) {
+    .sectioneFeriantes {
+      height: 390vh;
+    }
+}
+
+ //..............media.queries.emprendedores............//
+
+ @media screen and (max-width: 770px) {
+    .sectioneComentarios {
+      flex-direction: column;
+    }
+  }
+
+
+  @media screen and (max-width: 321px) {
+    .sectioneComentarios{
+        div{
+            p {
+                font-size: 25px;
+              }
+        }
+    }
+
+    .sectioneEmprendedores{
+        div {
+            p {
+      font-size: 25px;
+    }
+  }
+}
+}
+
+//...............media.queries.contactos............//
+
+@media screen and (max-width: 765px) {
+    .sectioneContactos{
+        div {
+      flex-direction: column;
+      height: 150vh;
+      margin-top: 15vh;
+    }
+}
+
+    .sectioneContactos {
+      height: 200vh;
+    }
+}
+
+  @media screen and (max-width: 428px) {
+    .hero{
+        p {
+            font-size: 18px;
+            margin-top: 8px;
+          }
+    } 
+  }
+  

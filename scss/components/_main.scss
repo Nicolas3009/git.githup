@@ -1,0 +1,310 @@
+.main {
+    background-color: LightCoral;
+    grid-area: main;
+  }
+
+//.............hero............//
+
+.hero {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        margin: 0 10px 0 10px;
+      }
+      p {
+        font-size: 25px;
+        text-align: center;
+        margin: 15px 10px 0 10px;
+      }
+  }
+
+  //...............main.index............//
+  
+  .sectionInicio{
+    div {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-image: url(../imagenes/hojas\ tropicales.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    div{
+        p {
+            font-size: 40px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: rgba(118, 124, 129, 0.616);
+            width: 400px;
+          }
+           
+    }
+  }
+}
+  
+//....................main.nosotros.....................//
+
+.sectionHistoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 250, 250);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    h2 {
+        font-size: 40px;
+        padding: 7px;
+        color: LightCoral;
+      }
+      p {
+        font-size: 18px;
+        text-align: center;
+        color: LightCoral;
+        padding: 8px;
+      }
+  }
+  
+  .sectionLugar {
+    background-color: LightSkyBlue;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        height: 450px;
+        img {
+            width: 400px;
+            height: 450px;
+            margin-top: 30px;
+          }
+          div{
+            p {
+                background-color: LightCoral;
+                margin: 30px;
+                font-size: 30px;
+                text-align: center;
+                color: aliceblue;
+                border: solid rgb(255, 250, 250);
+              }
+          }
+      }
+  }
+  
+  .sectionPerli {
+    background-color: LightSkyBlue;
+    margin-left: 20px;
+    margin-right: 20px;
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 10px;
+        height: 450px;
+        img {
+            width: 400px;
+            height: 450px;
+          }
+          div{
+            p {
+                background-color: rgb(255, 250, 250);
+                margin: 30px;
+                font-size: 30px;
+                text-align: center;
+                color: LightCoral;
+                border: solid LightCoral;
+              }
+          }
+      }
+  }
+  
+  //................main.servicios...............//
+
+.sectioneFeriantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
+    height: 200vh;
+    margin: 20px;
+    h3 {
+        font-size: 50px;
+        padding: 10px;
+        color: LightCoral;
+        text-align: center;
+      }
+      p {
+        font-size: 30px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+  }
+  
+  .sectioneVisitantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
+    height: 100vh;
+    margin: 20px;
+    h3 {
+        font-size: 50px;
+        padding: 10px;
+        color: LightCoral;
+        text-align: center;
+      }
+      p {
+        font-size: 30px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+  }
+
+  //...............main.emprendedores...............//
+
+.sectioneComentarios {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.486);
+    margin: 0 10px 0 10px;
+    div {
+        margin: 20px;
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            p {
+                background-color: white;
+                font-size: 20px;
+                padding: 8px;
+                color: rgb(250, 246, 27);
+              }
+          }
+          p {
+            font-size: 30px;
+            color: aliceblue;
+            background-color: LightCoral;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+          }
+        }
+  }
+  
+  .sectioneEmprendedores {
+    background-color: rgba(255, 255, 255, 0.486);
+    margin: 0 10px 0 10px;
+    div{
+        div{
+            div{
+                div{
+                    div{
+                        a {
+                            background-color: #fff000;
+                            background-image: linear-gradient(315deg, #fff000 0%, rgb(255, 0, 43), #d6037e 85%, rgb(147, 6, 190));
+                          }
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+//...............main.contactos.................//
+.sectioneContactos {
+    height: 100vh;
+    background-color: rgba(13, 159, 196, 0.747);
+    padding: 15px;
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(250, 235, 215, 0.425);
+        background-position: 50% 50%;
+        a{
+            img {
+                transition: 1s;
+                &:hover {
+                    width: 200px;
+                  }
+                }
+        }
+        div{
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                margin: 4px;
+                textarea {
+                    color: black;
+                    padding: 4px;
+                  }
+                  input {
+                    color: LightCoral;
+                    margin: 4px;
+                    width: 120px;
+                    height: 25px;
+                    background-color: aliceblue;
+                    font-size: 15px;
+                    transition: all 1s;
+                    &:hover {
+                        background-color: LightCoral;
+                        color: aliceblue;
+                      }
+                  }
+              }
+        }
+      }
+  }
+  
+//..............main.galeria...............//
+
+.sectioneGaleria{
+    div {
+        background-color: rgba(255, 228, 196, 0.493);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+        img {
+            margin: 8px;
+            transition: all 1s;
+            &:hover {
+                width: 300px;
+                background-color: LightCoral;
+                padding: 8px;
+              }
+          }
+      }
+} 
+  
+  
+
+  
+
+  

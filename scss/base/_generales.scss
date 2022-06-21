@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2? family=Lato:ital@0;1&family=Roboto:wght@100&display=swap');
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr auto, 0.5fr;
+    gap: 4px 0px;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+  }
