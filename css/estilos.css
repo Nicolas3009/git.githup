@@ -35,16 +35,18 @@
   grid-area: nav;
 }
 .nav div button {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.699);
 }
 .nav div div ul li a {
-  font-size: 18px;
+  margin: 15px 0 15px 0;
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 5px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
   color: LightCoral;
   padding: 4px;
   transition: all 1s;
-  margin: 15px 0 15px 0;
 }
 .nav div div ul li a:hover {
   border-left: 8px solid LightCoral;
@@ -125,26 +127,26 @@
   padding: 8px;
 }
 
-.sectionLugar {
-  background-color: LightSkyBlue;
+.sectionLugar, .sectionPerli {
+  background-color: rgba(0, 255, 255, 0.863);
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.sectionLugar div {
+.sectionLugar div, .sectionPerli div {
   display: flex;
   align-items: center;
   flex-direction: row;
   padding: 10px;
   height: 490px;
 }
-.sectionLugar div img {
+.sectionLugar div img, .sectionPerli div img {
   width: 400px;
   height: 450px;
   margin-top: 30px;
 }
-.sectionLugar div div p {
+.sectionLugar div div p, .sectionPerli div div p {
   background-color: LightCoral;
   margin: 30px;
   font-size: 30px;
@@ -153,11 +155,6 @@
   border: solid rgb(255, 250, 250);
 }
 
-.sectionPerli {
-  background-color: LightSkyBlue;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 .sectionPerli div {
   display: flex;
   align-items: center;
@@ -354,6 +351,14 @@
   height: 50px;
 }
 
+/*............media.queries.nav........*/
+.nav div div ul li {
+  margin-top: 15px;
+}
+.nav div div ul li a {
+  padding: 7px;
+}
+
 /*...............media.queries.index............*/
 @media screen and (max-width: 992px) {
   .sectionInicio div {
@@ -403,10 +408,10 @@
 }
 /*...............media.queries.nosotros............*/
 @media screen and (max-width: 1015px) {
-  .sectionLugar {
+  .sectionLugar, .sectionPerli {
     height: 150vh;
   }
-  .sectionLugar div {
+  .sectionLugar div, .sectionPerli div {
     flex-direction: column;
   }
   .sectionPerli {
@@ -417,12 +422,12 @@
   }
 }
 @media screen and (max-width: 769px) {
-  .sectionLugar {
+  .sectionLugar, .sectionPerli {
     height: 200vh;
   }
 }
 @media screen and (max-width: 530px) {
-  .sectionLugar div img {
+  .sectionLugar div img, .sectionPerli div img {
     width: 350px;
     height: 400px;
   }
@@ -432,7 +437,7 @@
   }
 }
 @media screen and (max-width: 474px) {
-  .sectionLugar div img {
+  .sectionLugar div img, .sectionPerli div img {
     width: 300px;
     height: 350px;
   }
@@ -449,7 +454,7 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .sectionLugar div img {
+  .sectionLugar div img, .sectionPerli div img {
     width: 250px;
     height: 300px;
   }
@@ -459,7 +464,7 @@
   }
 }
 @media screen and (max-width: 374px) {
-  .sectionLugar div div p {
+  .sectionLugar div div p, .sectionPerli div div p {
     font-size: 25px;
   }
   .sectionPerli div div p {
@@ -467,7 +472,7 @@
   }
 }
 @media screen and (max-width: 330px) {
-  .sectionLugar div img {
+  .sectionLugar div img, .sectionPerli div img {
     width: 200px;
     height: 250px;
   }

@@ -88,7 +88,7 @@
 }
 
 .sectionLugar {
-  background-color: LightSkyBlue;
+  background-color: rgba(0, 255, 255, 0.863);
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
@@ -121,10 +121,7 @@
 }
 
 .sectionPerli {
-  background-color: LightSkyBlue;
-  margin-left: 20px;
-  margin-right: 20px;
-
+ @extend .sectionLugar;
   div {
     display: flex;
     align-items: center;

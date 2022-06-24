@@ -5,19 +5,23 @@
     grid-area: nav;
     div{
         button {
-            background-color: white;
-          }
+            background-color: rgba(255, 255, 255, 0.699);
+        }
           div{
             ul{
                 li{
+                  
                     a {
-                        font-size: 18px;
+                      margin: 15px 0 15px 0;
+                      background-color: rgba(255, 255, 255, 0.719); 
+                      border-radius: 5px;
+                        font-size: 15px;
                         font-weight: bold;
                         text-decoration: none;
                         color: LightCoral;
                         padding: 4px;
                         transition: all 1s;
-                        margin: 15px 0 15px 0;
+                       
                         &:hover {
                             border-left: 8px solid LightCoral;
                             background-color: aliceblue;
@@ -27,7 +31,7 @@
                 }
             }
           }
-
+        
     }
   }
   
