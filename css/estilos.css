@@ -13,6 +13,7 @@
   grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
 }
 
+/*.............header............*/
 .header {
   height: 250px;
   background-image: url("../imagenes/imagen-general.jpg");
@@ -28,6 +29,7 @@
   height: 150px;
 }
 
+/*.............nav...........*/
 .nav {
   background-color: rgb(0, 255, 255);
   grid-area: nav;
@@ -49,11 +51,13 @@
   background-color: aliceblue;
 }
 
+/*............main...........*/
 .main {
   background-color: LightCoral;
   grid-area: main;
 }
 
+/*.............hero............*/
 .hero {
   color: aliceblue;
   display: flex;
@@ -77,6 +81,7 @@
   margin: 15px 10px 0 10px;
 }
 
+/*...............main.index............*/
 .sectionInicio div {
   height: 110vh;
   display: flex;
@@ -98,6 +103,7 @@
   width: 400px;
 }
 
+/*....................main.nosotros.....................*/
 .sectionHistoria {
   display: flex;
   flex-direction: column;
@@ -131,7 +137,7 @@
   align-items: center;
   flex-direction: row;
   padding: 10px;
-  height: 450px;
+  height: 490px;
 }
 .sectionLugar div img {
   width: 400px;
@@ -157,21 +163,24 @@
   align-items: center;
   flex-direction: row-reverse;
   padding: 10px;
-  height: 450px;
+  height: 490px;
 }
 .sectionPerli div img {
   width: 400px;
   height: 450px;
+  margin-bottom: 20px;
 }
 .sectionPerli div div p {
-  background-color: rgb(255, 250, 250);
+  background-color: aliceblue;
   margin: 30px;
   font-size: 30px;
   text-align: center;
-  color: LightCoral;
-  border: solid LightCoral;
+  color: lightcoral;
+  border: solid lightcoral;
 }
 
+/*................main.servicios...............*/
+/*mixin*/
 .sectioneFeriantes {
   display: flex;
   flex-direction: column;
@@ -216,6 +225,7 @@
   text-align: center;
 }
 
+/*...............main.emprendedores...............*/
 .sectioneComentarios {
   display: flex;
   flex-direction: column;
@@ -254,16 +264,16 @@
   background-image: linear-gradient(315deg, #fff000 0%, rgb(255, 0, 43), #d6037e 85%, rgb(147, 6, 190));
 }
 
+/*...............main.contactos.................*/
 .sectioneContactos {
   height: 100vh;
-  background-color: rgba(13, 159, 196, 0.747);
   padding: 15px;
 }
 .sectioneContactos div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(250, 235, 215, 0.425);
+  background-color: rgba(255, 255, 255, 0.486);
   background-position: 50% 50%;
 }
 .sectioneContactos div a img {
@@ -297,6 +307,7 @@
   color: aliceblue;
 }
 
+/*..............main.galeria...............*/
 .sectioneGaleria div {
   background-color: rgba(255, 228, 196, 0.493);
   display: flex;
@@ -307,11 +318,12 @@
   padding: 10px;
 }
 .sectioneGaleria div img {
+  width: 300px;
   margin: 8px;
   transition: all 1s;
 }
 .sectioneGaleria div img:hover {
-  width: 300px;
+  width: 370px;
   background-color: LightCoral;
   padding: 8px;
 }
@@ -342,6 +354,7 @@
   height: 50px;
 }
 
+/*...............media.queries.index............*/
 @media screen and (max-width: 992px) {
   .sectionInicio div {
     flex-direction: column;
@@ -388,7 +401,8 @@
     width: 280px;
   }
 }
-@media screen and (max-width: 990px) {
+/*...............media.queries.nosotros............*/
+@media screen and (max-width: 1015px) {
   .sectionLugar {
     height: 150vh;
   }
@@ -465,6 +479,7 @@
     font-size: 30px;
   }
 }
+/*...............media.queries.servicios............*/
 @media screen and (max-width: 1120px) {
   .sectioneFeriantes {
     height: 250vh;
@@ -497,9 +512,9 @@
     font-size: 35px;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 420px) {
   .sectioneFeriantes {
-    height: 320vh;
+    height: 330vh;
   }
   .sectioneVisitantes {
     height: 130vh;
@@ -518,6 +533,7 @@
     height: 390vh;
   }
 }
+/*..............media.queries.emprendedores............*/
 @media screen and (max-width: 770px) {
   .sectioneComentarios {
     flex-direction: column;
@@ -531,6 +547,7 @@
     font-size: 25px;
   }
 }
+/*..............media.queries.contactos............*/
 @media screen and (max-width: 765px) {
   .sectioneContactos div {
     flex-direction: column;
@@ -545,6 +562,15 @@
   .hero p {
     font-size: 18px;
     margin-top: 8px;
+  }
+}
+/*..............media.queries.galeria.......*/
+@media screen and (max-width: 360px) {
+  .sectioneGaleria div img {
+    width: 260px;
+  }
+  .sectioneGaleria div img:hover {
+    width: 300px;
   }
 }
 

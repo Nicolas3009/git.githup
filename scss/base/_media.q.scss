@@ -1,4 +1,4 @@
-//...............media.queries.index............//
+/*...............media.queries.index............*/
 @media screen and (max-width: 992px) {
     .sectionInicio{
         div {
@@ -91,9 +91,9 @@
     }
 }
 
-//...............media.queries.nosotros............//
+/*...............media.queries.nosotros............*/
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1015px) {
     .sectionLugar{
         height: 150vh;
         div {
@@ -239,7 +239,7 @@
     } 
   }
 
-   //...............media.queries.servicios............//
+   /*...............media.queries.servicios............*/
    @media screen and (max-width: 1120px) {
     .sectioneFeriantes {
       height: 250vh;
@@ -292,9 +292,9 @@
     } 
   }
 
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 420px) {
     .sectioneFeriantes {
-      height: 320vh;
+      height: 330vh;
     }
 
     .sectioneVisitantes {
@@ -317,7 +317,7 @@
     }
 }
 
- //..............media.queries.emprendedores............//
+ /*..............media.queries.emprendedores............*/
 
  @media screen and (max-width: 770px) {
     .sectioneComentarios {
@@ -344,7 +344,7 @@
 }
 }
 
-//...............media.queries.contactos............//
+/*..............media.queries.contactos............*/
 
 @media screen and (max-width: 765px) {
     .sectioneContactos{
@@ -368,4 +368,18 @@
           }
     } 
   }
+
+  /*..............media.queries.galeria.......*/
   
+  @media screen and (max-width:360px){
+    .sectioneGaleria{
+      div{
+        img{
+          width: 260px;
+          &:hover{
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
