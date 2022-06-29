@@ -1,4 +1,6 @@
 /*............media.queries.nav........*/
+@media screen and (max-width: 991px){
+  
 .nav {
  
   div{
@@ -18,6 +20,7 @@
         }
       
   }
+}
 
 
 /*...............media.queries.index............*/
@@ -27,13 +30,13 @@
         div {
       flex-direction: column;
       img {
-        width: 250px;
+        width: 230px;
       }
       div{
         p {
             align-items: center;
             margin: 0 0 15% 0;
-            font-size: 37px;
+            font-size: 30px;
         
           }
       }
@@ -72,7 +75,7 @@
         div{
           div{
             p {
-                font-size: 35px;
+                font-size: 27px;
               }
           }  
         } 
@@ -84,7 +87,7 @@
         div{
             div{
                 p {
-                    font-size: 30px;
+                    font-size: 25px;
                   } 
             }
         } 
@@ -118,7 +121,7 @@
 
 @media screen and (max-width: 1015px) {
     .sectionLugar{
-        height: 150vh;
+        height: 200vh;
         div {
       flex-direction: column;
     }
@@ -136,7 +139,7 @@
 
   @media screen and (max-width: 769px) {
     .sectionLugar {
-      height: 200vh;
+      height: 230vh;
     }
   }
 
@@ -268,77 +271,51 @@
       height: 250vh;
     }
   }
-
-  @media screen and (max-width: 1025px) {
-    .sectioneFeriantes{
-        p {
-            font-size: 25px;
-          }
-    } 
-
+  @media screen and (max-width: 991px){
+    .sectioneFeriantes {
+      height: 400vh;
+    }
     .sectioneVisitantes{
-        p {
-            font-size: 25px;
-          }
-    } 
-  }
-
-  @media screen and (max-width: 769px) {
-    .sectioneFeriantes {
-      height: 280vh;
+      height: 160vh;
     }
   }
-
-  @media screen and (max-width: 598px) {
-    .sectioneFeriantes{
-        p {
-            font-size: 22px;
-          }
+@media screen and (max-width:768px){
+  .sectioneFeriantes{
+    h3{
+font-size: 35px;
     }
-
-    .sectioneFeriantes{
-        h3 {
-            font-size: 35px;
-          }
-    } 
-
-    .sectioneVisitantes{
-        p {
-            font-size: 22px;
-          }
-    }
-
-    .sectioneVisitantes{
-        h3 {
-            font-size: 35px;
-          }
-    } 
-  }
-
-  @media screen and (max-width: 420px) {
-    .sectioneFeriantes {
-      height: 330vh;
-    }
-
-    .sectioneVisitantes {
-      height: 130vh;
+    p{
+font-size: 25px;
     }
   }
-
-  @media screen and (max-width: 360px) {
-    .sectioneFeriantes {
-      height: 370vh;
+  .sectioneVisitantes{
+    h3{
+font-size: 35px;
     }
-
-    .sectioneVisitantes {
-      height: 150vh;
+    p{
+font-size: 25px;
     }
   }
-  @media screen and (max-width: 337px) {
-    .sectioneFeriantes {
-      height: 390vh;
-    }
 }
+@media screen and (max-width:439px){
+  .sectioneFeriantes{
+    height: 450vh;
+  }
+}
+@media screen and (max-width:379px){
+  .sectioneFeriantes{
+    height: 520vh;
+  }
+  .sectioneVisitantes{
+    height: 210vh;
+  }
+}
+@media screen and (max-width:339px){
+  .sectioneFeriantes{
+    height: 550vh;
+  }
+}
+ 
 
  /*..............media.queries.emprendedores............*/
 
