@@ -1,39 +1,37 @@
-
 /*.............nav...........*/
 .nav {
-    background-color: rgb(0, 255, 255);
-    grid-area: nav;
-    div{
-        button {
-            background-color: rgba(255, 255, 255, 0.699);
-        }
-          div{
-            ul{
-                li{
-                  
-                    a {
-                      margin: 15px 0 15px 0;
-                      background-color: rgba(255, 255, 255, 0.719); 
-                      border-radius: 5px;
-                        font-size: 15px;
-                        font-weight: bold;
-                        text-decoration: none;
-                        color: LightCoral;
-                        padding: 4px;
-                        transition: all 1s;
-                       
-                        &:hover {
-                            border-left: 8px solid LightCoral;
-                            background-color: aliceblue;
-                          }
-                        
-                      }
-                }
-            }
-          }
-        
-    }
-  }
-  
-  
+  background-color: rgb(0, 255, 255);
+  grid-area: nav;
 
+  div {
+    button {
+      background-color: rgba(255, 255, 255, 0.699);
+    }
+
+    div {
+      ul {
+        li {
+
+          a {
+            margin: 15px 0 15px 0;
+            background-color: rgba(255, 255, 255, 0.719);
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: LightCoral;
+            padding: 4px;
+            transition: all 1s;
+
+            &:hover {
+              border-left: 8px solid LightCoral;
+              background-color: aliceblue;
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}
